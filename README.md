@@ -29,7 +29,7 @@ This project was developed as part of a school project during my studies. In thi
 Before you begin, ensure you have the following installed on your machine:
 
 - [Java Development Kit (JDK)](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html) (version 11 or later)
-- [Maven](https://gradle.org/install/)
+- [Maven](https://maven.apache.org/install.html)
 
  ### Setup
 
