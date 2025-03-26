@@ -2,5 +2,39 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>inf101v22</groupId>
   <artifactId>2048</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1</version>    
+<dependencies>
+    <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter-engine</artifactId>
+        <version>5.8.1</version>
+        <scope>test</scope>
+    </dependency>
+</dependencies>
+
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jar-plugin</artifactId>
+            <version>3.2.0</version>
+            <configuration>
+                <archive>
+                    <manifest>
+                        <addClasspath>true</addClasspath>
+                        <classpathPrefix>lib/</classpathPrefix>
+                        <mainClass>game.GameMain</mainClass> <!-- Replace with your actual main class -->
+                    </manifest>
+                </archive>
+            </configuration>
+        </plugin>
+        
+        <!-- This plugin ensures tests run correctly -->
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>2.22.2</version>
+        </plugin>
+    </plugins>
+</build>
 </project>
