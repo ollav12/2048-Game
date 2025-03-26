@@ -11,6 +11,12 @@
 This project was developed as part of a school project during my studies. In this project i decieded to recreate the classic 2048 puzzle game, with focus on object-oriented design principles. The player combines tiles stratigically to reach the 2048 tile.
 Tiles with matching number are able to merge together if they collide. This creates a new tile with the sum of those two tiles, example: tile 2 and tile 2 merges together and creates tile 4, tile 4 and tile 4 merges together and creates tile 8, and so on...
 
+### Example Start Screen
+![image](https://github.com/user-attachments/assets/a3acd27a-ba2f-44d8-9ded-a3a60a6edded)
+
+### Example Loss Screen
+![image](https://github.com/user-attachments/assets/2231f901-3a40-4405-ba25-69d223d7e1a8)
+
 ### How to play
 
 - Move: Arrow Keys (Right, Left, Up, Down)
@@ -41,19 +47,20 @@ Before you begin, ensure you have the following installed on your machine:
 
  ### Setup
 
- 1. Navigate to the `game` directory:
+ 1. Navigate to the `2048` directory:
 
  ```bash
- cd src/main/java/game
+ cd 2048-Game/2048
  ```
 
 2. Build the project:
 
  ```bash
- mvn build
+ mvn clean compile
  ```
 
 3. Run the game:
  ```bash
- mvn run
+ cd /taget
+ java -jar 2048-1.jar
  ```
