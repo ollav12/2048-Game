@@ -8,22 +8,28 @@
 - [Installaton & Setup](#prerequisites)
 
 ## Overview
-This project was developed in my spare time. I deciced to create a clone of the popular cookie clicker web game, but usinign java instead of javascript. When developing this game i have focusd on using OOP and following a MVC pattern. These are principles i have learned in courses in my studies and also wanted to improve in my spare time. The game is still under development but the core gameplay is finished.
+This project was developed as part of a school project during my studies. In this project i decieded to recreate the classic 2048 puzzle game, with focus on object-oriented design principles. The player combines tiles stratigically to reach the 2048 tile.
+Tiles with matching number are able to merge together if they collide. This creates a new tile with the sum of those two tiles, example: tile 2 and tile 2 merges together and creates tile 4, tile 4 and tile 4 merges together and creates tile 8, and so on...
 
-### Coockie Clicker Game
-![image](https://github.com/user-attachments/assets/74ca1de9-0edd-4528-8b66-44f8b2a7b84b)
+### Example Start Screen
+![image](https://github.com/user-attachments/assets/a3acd27a-ba2f-44d8-9ded-a3a60a6edded)
+
+### Example Loss Screen
+![image](https://github.com/user-attachments/assets/2231f901-3a40-4405-ba25-69d223d7e1a8)
 
 ### How to play
 
-Click on the "Click Me" button to recieve cookies. Spend your cookies on buildings to increas Cps (cookies per second), upgrades (to increase multipler) and on power ups (increase buildings multiplier).
-You can save your games but also reset if you want. If you save the game, quit and start the game will load the saved game state and also calculate the amount of cookies earned while you were away.
-
+- Move: Arrow Keys (Right, Left, Up, Down)
+- Exit Game: "Escape"
+- Restart Game: "r"
+- Game is won if tile 2048 is reached
+- Game is lost if you can't move any tiles
 
 ## Features
 
-- Purchase buildings, Upgrades and Power Ups
-- Save game state (and calculate offline cookies earned)
-- Reset game state
+- Score tracking
+- Menu-System
+- Responsive Design
 
 ## Tech Stack
 - Java
@@ -41,20 +47,20 @@ Before you begin, ensure you have the following installed on your machine:
 
  ### Setup
 
- 1. Navigate to the `game` directory:
+ 1. Navigate to the `2048` directory:
 
  ```bash
- cd game
+ cd 2048-Game/2048
  ```
 
 2. Build the project:
 
  ```bash
- mvn clean package
+ mvn clean compile
  ```
 
 3. Run the game:
  ```bash
  cd /taget
- java -jar game-1.jar
+ java -jar 2048-1.jar
  ```
