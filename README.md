@@ -8,8 +8,16 @@
 - [Installaton & Setup](#prerequisites)
 
 ## Overview
-This project was developed as part of a school project during my studies. In this project i decieded to recreate the classic 2048 puzzle game, with focus on object-oriented design principles. The player combines tiles stratigically to reach the 2048 tile
+This project was developed as part of a school project during my studies. In this project i decieded to recreate the classic 2048 puzzle game, with focus on object-oriented design principles. The player combines tiles stratigically to reach the 2048 tile.
+Tiles with matching number are able to merge together if they collide. This creates a new tile with the sum of those two tiles, example: tile 2 and tile 2 merges together and creates tile 4, tile 4 and tile 4 merges together and creates tile 8, and so on...
 
+### How to play
+
+- Move: Arrow Keys (Right, Left, Up, Down)
+- Exit Game: "Escape"
+- Restart Game: "r"
+- Game is won if tile 2048 is reached
+- Game is lost if you can't move any tiles
 
 ## Features
 
